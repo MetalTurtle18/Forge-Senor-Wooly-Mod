@@ -1,6 +1,8 @@
 package com.metalturtle.srwooly;
 
 import com.metalturtle.srwooly.util.RegistryHandler;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -37,4 +39,12 @@ public class SenorWooly {
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
     }
+
+    public static final ItemGroup TAB = new ItemGroup("srwoolyTab") {
+
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.MAGIC_YARN.get());
+        }
+    };
 }
