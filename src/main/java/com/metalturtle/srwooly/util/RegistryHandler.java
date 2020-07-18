@@ -1,6 +1,7 @@
 package com.metalturtle.srwooly.util;
 
 import com.metalturtle.srwooly.SenorWooly;
+import com.metalturtle.srwooly.blocks.BlockItemBase;
 import com.metalturtle.srwooly.blocks.MagicWool;
 import com.metalturtle.srwooly.items.ItemBase;
 import net.minecraft.block.Block;
@@ -27,5 +28,6 @@ public class RegistryHandler {
     public static final RegistryObject<Block> MAGIC_WOOL = BLOCKS.register("magic_wool", MagicWool::new);
 
     //Block Items
+    public static final RegistryObject<Item> MAGIC_WOOL_ITEM = ITEMS.register("magic_wool", () -> new BlockItemBase(MAGIC_WOOL.get()));
 
 }
