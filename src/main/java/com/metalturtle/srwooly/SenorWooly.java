@@ -40,6 +40,7 @@ public class SenorWooly {
         // do something that can only be done on the client
     }
 
+    // Making custom creative tab
     public static final ItemGroup TAB = new ItemGroup("srwoolyTab") {
 
         @Override
