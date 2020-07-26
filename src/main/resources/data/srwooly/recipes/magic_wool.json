@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    " xx",
+    " xx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "srwooly:magic_yarn"
+    }
+  },
+  "result":
+  {
+    "item": "srwooly:magic_wool",
+    "count": 1
+  }
+}
