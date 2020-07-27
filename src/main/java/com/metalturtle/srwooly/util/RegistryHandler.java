@@ -23,6 +23,7 @@ public class RegistryHandler {
 
     // Items
     public static final RegistryObject<Item> MAGIC_YARN = ITEMS.register("magic_yarn", ItemBase::new);
+    public static final RegistryObject<Item> SENOR_WOOLIUM = ITEMS.register("senor_woolium", ItemBase::new);
 
     // Blocks
     public static final RegistryObject<Block> MAGIC_WOOL = BLOCKS.register("magic_wool", MagicWool::new);
