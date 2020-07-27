@@ -6,9 +6,9 @@ import net.minecraft.item.Item;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 
-public class Tubes extends Item {
+public class SuperHealerFood extends Item {
     
-    public Tubes() {
+    public SuperHealerFood() {
         super(new Item.Properties()
                 .group(SenorWooly.TAB)
                 .food(new Food.Builder()

@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 
 // The value here should match an entry in the META-INF/mods.toml file
-@SuppressWarnings("SpellCheckingInspection")
+@SuppressWarnings({"SpellCheckingInspection", "EmptyMethod", "unused"})
 @Mod("srwooly")
 public class SenorWooly {
     // Directly reference a log4j logger.
