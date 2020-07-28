@@ -1,6 +1,7 @@
 package com.metalturtle.srwooly;
 
-import com.metalturtle.srwooly.util.RegistryHandler;
+import com.metalturtle.srwooly.init.SrwoolyBlocks;
+import com.metalturtle.srwooly.init.SrwoolyItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,10 +24,13 @@ public class SenorWooly {
     public SenorWooly() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        RegistryHandler.init();
+        // Register Blocks and Items
+        SrwoolyBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        SrwoolyItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -45,7 +49,7 @@ public class SenorWooly {
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.MAGIC_YARN.get());
+            return new ItemStack(SrwoolyItems.TUBES.get());
         }
     };
 }
