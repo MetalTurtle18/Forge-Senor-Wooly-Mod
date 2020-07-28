@@ -8,7 +8,7 @@ public class MagicWool extends Block {
 
     public MagicWool() {
         super(Block.Properties.create(Material.WOOL)
-                .hardnessAndResistance(0.8f)
+                .hardnessAndResistance(0.8f, 0.8f)
                 .sound(SoundType.CLOTH)
                 .harvestLevel(0)
                 .setLightLevel(value -> 15));

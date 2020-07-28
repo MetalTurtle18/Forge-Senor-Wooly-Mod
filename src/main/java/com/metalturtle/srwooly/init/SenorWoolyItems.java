@@ -10,7 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 @SuppressWarnings("unused")
-public class SrwoolyItems {
+public class SenorWoolyItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SenorWooly.MOD_ID);
 
@@ -26,5 +26,5 @@ public class SrwoolyItems {
 
     // Block Items
     public static final RegistryObject<Item> MAGIC_WOOL_ITEM = ITEMS.register("magic_wool",
-            () -> new BlockItem(SrwoolyBlocks.MAGIC_WOOL.get(), new Item.Properties().group(SenorWooly.TAB)));
+            () -> new BlockItem(SenorWoolyBlocks.MAGIC_WOOL.get(), new Item.Properties().group(SenorWooly.TAB)));
 }
