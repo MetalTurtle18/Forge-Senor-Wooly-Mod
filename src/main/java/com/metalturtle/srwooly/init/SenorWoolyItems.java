@@ -27,4 +27,6 @@ public class SenorWoolyItems {
     // Block Items
     public static final RegistryObject<Item> MAGIC_WOOL_ITEM = ITEMS.register("magic_wool",
             () -> new BlockItem(SenorWoolyBlocks.MAGIC_WOOL.get(), new Item.Properties().group(SenorWooly.TAB)));
+    public static final RegistryObject<Item> SENOR_WOOLIUM_ORE_ITEM = ITEMS.register("senor_woolium_ore",
+            () -> new BlockItem(SenorWoolyBlocks.SENOR_WOOLIUM_ORE.get(), new Item.Properties().group(SenorWooly.TAB)));
 }

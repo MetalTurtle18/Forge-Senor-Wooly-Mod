@@ -8,6 +8,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorldReader;
 import net.minecraftforge.common.ToolType;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 @SuppressWarnings({"SpellCheckingInspection", "NullableProblems"})
 public class SenorWooliumOre extends OreBlock {
 
@@ -22,7 +24,7 @@ public class SenorWooliumOre extends OreBlock {
     @Override
     public int getExpDrop(BlockState state, IWorldReader reader, BlockPos pos, int fortune, int silktouch) {
         if(!(silktouch > 0)) {
-            return 1 + fortune;
+            return 1 + (ThreadLocalRandom.current().nextInt(0, fortune + 1));
         }
         return 0;
     }
